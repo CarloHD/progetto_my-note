@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyNote Web App</title>
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="headerCard card">
+      <div class="title">MyNote <sup class="hd">HD</sup></div>
+      <div class="textArea" contenteditable="true"></div>
+      <button class="defaultButton saveButton positiveButton">Salva</button>
+    </section>
+    <section>
+      <ul class="noteList"></ul>
+    </section>
+
+    <div class="overlayAlertWrap" hidden>
+      <div class="alert card slide-in-bck-top">
+        <div class="alertContent"></div>
+        <div class="alertButtonContainer">
+          <button class="confirm defaultButton alertButton">Ok</button>
+          <button class="abort defaultButton alertButton">Annulla</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="FAB">
+      <button class="toTopFAB positiveButton hidden">Vai su</button>
+      <button class="resetFAB negativeButton hidden">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

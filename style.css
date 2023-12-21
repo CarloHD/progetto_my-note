@@ -1,0 +1,219 @@
+* {
+  user-select: none;
+}
+body {
+  background-color: #ecf0f3;
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  min-width: 355px;
+  padding: 3% 5%;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+}
+
+.card {
+  box-shadow: 18px 18px 30px 0px #d1d9e6, -18px -18px 30px 0px #ffffff;
+  background-color: #ecf0f3;
+  border-radius: 25px;
+}
+
+.headerCard {
+  margin-top: 3%;
+  padding: 3%;
+
+  display: flex;
+  flex-flow: column;
+}
+.title {
+  font-family: 'Parisienne', cursive;
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 3%;
+}
+.hd {
+  position: relative;
+  top: -15px;
+  font-family: 'poppins', sans-serif;
+  font-size: 0.4em;
+  margin-left: -25px;
+}
+
+.textArea {
+  border: solid #d1d9e6 2px;
+
+  min-height: 30px;
+  font-size: 1.4em;
+  border-radius: 15px;
+  padding: 1.2%;
+  outline: #d1d9e6;
+  overflow-wrap: break-word;
+}
+
+.defaultButton {
+  font-family: inherit;
+  width: 120px;
+  height: 47px;
+
+  font-size: 1.2em;
+  border: 1px solid #d1d9e6;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 1%;
+
+  box-shadow: 10px 10px 30px 0px #d1d9e6, -10px -10px 30px 0px #ffffff;
+}
+
+.saveButton {
+  margin-top: 2%;
+  align-self: end;
+}
+.positiveButton {
+  background-color: #5875a3 !important;
+  color: #fff;
+}
+.negativeButton {
+  background-color: #a25774;
+  color: #fff;
+}
+
+button.delButton:active,
+button.saveButton:active {
+  transform: translateY(3px);
+  box-shadow: inset 5px 5px 30px 0px rgba(78, 86, 99, 0.3),
+    inset -5px -5px 30px 0px rgb(255, 255, 255, 0.8), #d1d9e6 13px 13px 30px 0px,
+    #fff -13px -13px 30px 0px;
+}
+
+.noteList {
+  width: 90%;
+  min-width: 100%;
+  list-style: none;
+  margin: auto;
+  padding-left: 0px;
+}
+li {
+  padding: 20px 5%;
+  min-height: 40px;
+  font-size: 1.2em;
+  margin-top: 50px;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.noteContent {
+  word-wrap: break-word;
+}
+.delButton {
+  font-size: 1em;
+  margin: auto 0px;
+  align-self: flex-end;
+}
+.overlayAlertWrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.deletingNote {
+  width: fit-content;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 5%;
+
+  box-shadow: #d1d9e6 0px 5px 10px -3px;
+}
+
+.alert {
+  z-index: 2;
+  border-radius: 20px;
+  box-shadow: #d1d9e6 0px 5px 10px -3px;
+  width: 30%;
+  min-width: fit-content;
+  margin: auto;
+  margin-top: 5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.alertContent {
+  align-self: center;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 20px 0px;
+  padding: 0 10%;
+}
+.alertButtonContainer {
+  font-size: 0.9em;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.alertButton {
+  width: 80%;
+  text-align: center;
+
+  margin: 0px auto 5%;
+}
+
+.FAB {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.toTopFAB:active {
+  transform: scale(90%);
+}
+
+.resetFAB:active {
+  transform: scale(90%);
+}
+
+.FAB button {
+  font-family: inherit;
+  font-size: 1em;
+  text-align: center;
+}
+
+.toTopFAB {
+  box-shadow: 18px -18px 30px 0px #d1d9e6, -18px -18px 30px 0px #ffffff;
+
+  width: 100%;
+  height: 50%;
+  border: none;
+
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 0;
+}
+.resetFAB {
+  box-shadow: 18px 18px 30px 0px #d1d9e6, -18px 18px 30px 0px #ffffff;
+
+  width: 100%;
+  height: 50%;
+  border: none;
+
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
